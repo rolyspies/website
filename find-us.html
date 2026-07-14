@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Us - Roly's Traditional Pie and Mash</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Georgia:wght@400;700&amp;display=swap" rel="stylesheet">
+    <style>
+        :root { --red: #9B1C1C; --green: #4A8C2F; }
+        .header-font { font-family: 'Playfair Display', serif; }
+        .body-font { font-family: 'Georgia', serif; }
+        html { scroll-behavior: smooth; }
+        .nav-link { transition: all 0.2s ease; }
+        .nav-link:hover { color: #9B1C1C; transform: translateY(-2px); }
+        .call-btn { transition: all 0.3s ease; }
+        .call-btn:hover { transform: scale(1.15) rotate(15deg); background-color: #9B1C1C; }
+        .parking-box { transition: all 0.3s ease; }
+        .parking-box:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); background-color: #ecfdf5; }
+    </style>
+</head>
+<body class="bg-white text-stone-800">
+
+    <!-- HEADER -->
+    <header class="bg-white border-b border-stone-200 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="header-font text-2xl md:text-3xl font-bold tracking-wider text-[#9B1C1C] -ml-1">
+                ROLY'S TRADITIONAL PIE AND MASH
+            </div>
+
+            <nav class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="menu.html" class="nav-link">MENU</a>
+                <a href="opening-times.html" class="nav-link">OPENING HOURS</a>
+                <a href="find-us.html" class="nav-link text-[#9B1C1C]">FIND US</a>
+            </nav>
+
+            <button id="hamburger" class="md:hidden text-3xl text-[#9B1C1C]">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <a href="tel:07586924922" class="call-btn bg-[#4A8C2F] text-white w-9 h-9 flex items-center justify-center rounded-full ml-6">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-6 py-8 flex flex-col gap-6 text-lg font-medium">
+                <a href="index.html">HOME</a>
+                <a href="menu.html">MENU</a>
+                <a href="opening-times.html">OPENING HOURS</a>
+                <a href="find-us.html">FIND US</a>
+                <a href="tel:07586924922" class="bg-[#4A8C2F] text-white text-center py-4 rounded font-bold flex items-center justify-center gap-3 mt-4">
+                    <i class="fa-solid fa-phone"></i> CALL TO ORDER
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-6 py-12">
+        <h1 class="header-font text-5xl text-center text-[#9B1C1C] mb-8">Find Us</h1>
+        
+        <div class="text-center mb-8">
+            <p class="text-xl font-medium">18 East Street<br>Selsey, Chichester<br>PO20 0BJ<br>United Kingdom</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-[#9B1C1C] mb-4">How to Find Us</h3>
+                    <p class="body-font text-lg leading-relaxed">
+                        We are located on East Street in Selsey, directly opposite the East Street Car Park.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-[#4A8C2F] mb-3">Travel Distances</h4>
+                    <ul class="body-font space-y-3 text-base">
+                        <li>• <strong>From M25:</strong> Approx. 1 hour drive</li>
+                        <li>• <strong>From Chichester:</strong> 15–20 minutes drive</li>
+                        <li>• <strong>From Brighton:</strong> Approx. 45 minutes</li>
+                        <li>• <strong>From Portsmouth:</strong> Approx. 40 minutes</li>
+                    </ul>
+                </div>
+
+                <div class="parking-box bg-emerald-50 p-6 rounded-2xl border border-emerald-200">
+                    <p class="font-medium text-[#4A8C2F] flex items-start gap-3">
+                        <span class="text-2xl">🅿️</span>
+                        <span>
+                            <strong>Local Parking:</strong><br>
+                            1 hour <strong>free parking</strong> available in the East Street Car Park directly opposite Roly’s Pie and Mash shop.
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <div class="aspect-square rounded-2xl overflow-hidden shadow-lg border border-stone-200">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1262.67380706302!2d-0.7918431613014609!3d50.73204129061202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487455001f2e6755%3A0xc58e2fda4ad55fc4!2sRoly%E2%80%99s%20pie%20and%20mash!5e0!3m2!1sen!2suk!4v1783915565675!5m2!1sen!2suk" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#4A8C2F] text-white py-12 text-center px-6">
+        <p class="text-base md:text-lg">18 East Street, Selsey, Chichester, PO20 0BJ</p>
+        <p class="mt-2 text-xl md:text-2xl font-bold">07586 924922</p>
+
+        <div class="max-w-md mx-auto mt-10">
+            <p class="font-medium mb-4">Sign up to our mailing list to find out future offers, events and exciting news!</p>
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSfV0TNv2kcdMSRe4v-q4QsUtYLrQ8mcoeT0lPVRecZ3l2i-rw/viewform?usp=publish-editor" method="POST" target="_blank" class="flex flex-col sm:flex-row gap-3">
+                <input type="email" name="entry.123456789" placeholder="Your email address" 
+                       class="flex-1 px-5 py-4 rounded-2xl border border-stone-300 focus:outline-none focus:border-white bg-white text-stone-800">
+                <button type="submit" 
+                        class="bg-white text-[#9B1C1C] hover:bg-stone-100 px-8 py-4 rounded-2xl font-medium transition-colors whitespace-nowrap">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+
+        <div class="flex justify-center gap-8 mt-10 flex-wrap">
+            <a href="https://www.facebook.com/share/1CCyAzhzyL/" target="_blank" class="flex items-center gap-3 hover:text-[#9B1C1C] transition-colors">
+                <i class="fa-brands fa-facebook text-3xl"></i>
+                <span class="font-medium">roly's pies</span>
+            </a>
+            <a href="https://www.instagram.com/rolys.pie.and.mash" target="_blank" class="flex items-center gap-3 hover:text-[#9B1C1C] transition-colors">
+                <i class="fa-brands fa-instagram text-3xl"></i>
+                <span class="font-medium">rolys.pie.and.mash</span>
+            </a>
+            <a href="https://www.tiktok.com/@rolyspieandmash" target="_blank" class="flex items-center gap-3 hover:text-[#9B1C1C] transition-colors">
+                <i class="fa-brands fa-tiktok text-3xl"></i>
+                <span class="font-medium">Rolyspieandmash</span>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = hamburger.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-xmark');
+        });
+    </script>
+</body>
+</html>
